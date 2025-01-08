@@ -6,11 +6,11 @@ import Dashboard from "./pages/dashboard/dashboard.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         <Routes>
           <Route path="/" element={<Dashboard />} />
         </Routes>
-      </header>
+      {/* </header> */}
     </div>
   );
 }

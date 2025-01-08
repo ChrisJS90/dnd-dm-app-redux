@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { statMod } from "../../functions";
+import "./characterCard.css"
 
 const CharacterCard = ({ character }) => {
   const [char, setChar] = useState(character);
@@ -36,7 +37,7 @@ const CharacterCard = ({ character }) => {
 
 
   return (
-    <div>
+    <div id="card">
       <div id="basic-info">
         <h3>{`${char.name}`}</h3>
         <h4>{`Player: ${char.player}`}</h4>
@@ -64,13 +65,13 @@ const CharacterCard = ({ character }) => {
             </button>
           </span>
         </div>
-        <div id="speed-initiative">
+        {/* <div id="speed-initiative">
           <p>{`Speed: ${char.combat.speed}`}</p>
           <label>
             Initiative
             <input type="number" placeholder="initiative" />
           </label>
-        </div>
+        </div> */}
       </div>
       <div id="stats">
         <div className="stat">
