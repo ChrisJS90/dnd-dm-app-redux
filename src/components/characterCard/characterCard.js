@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { statMod } from "../../functions";
+import { statMod } from "../../utilities/functions";
 import "./characterCard.css"
 
 const CharacterCard = ({ character }) => {

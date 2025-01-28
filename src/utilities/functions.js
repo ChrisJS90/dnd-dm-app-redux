@@ -26,7 +26,7 @@ const statMod = (stat) => {
     }
 }
 
-const profBonus = (level) => {
+const profBonusCalc = (level) => {
     if(level < 1 || level > 20) {
         return "invalid level"
     } else if(level < 5) {
@@ -55,4 +55,4 @@ const profCalc = (pB, stat, prof) => {
 }
 
 
-export { statMod, profBonus, profCalc }
+export { statMod, profBonusCalc, profCalc }
